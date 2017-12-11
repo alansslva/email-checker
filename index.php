@@ -8,9 +8,11 @@
 
 require 'vendor/autoload.php';
 
-$email = $_GET['email-verify'];
+$email          = $_GET['email-verify'];
+$source_email   = $_GET['source-email'];
+$port           = $_GET['source-port'];
 
-$ve = new hbattat\VerifyEmail($email, 'alan@prismasolucao.com.br');
+$ve = new hbattat\VerifyEmail($email, $source_email, $port);
 echo '<pre>';
 var_dump($ve->verify());
 echo '</pre>';

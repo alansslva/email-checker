@@ -402,6 +402,7 @@
         $result = file_get_contents($this->_yahoo_signup_ajax_url, false, $context);
       }
       else if($service == 'hotmail'){
+          echo 'aqui';
         $headers = array();
         $headers[] = 'Origin: https://login.live.com';
         $headers[] = 'hpgid: 33';

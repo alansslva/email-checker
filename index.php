@@ -14,45 +14,55 @@ $port           = $_GET['source-port'];
 
 $ve = new hbattat\VerifyEmail($email, $source_email, $port);
 
-$email_arr = explode('@', $email);
-if(in_array(strtolower($email_arr[1]),['yahoo.com'])) {
+echo '<pre>';
+print_r($ve->get_errors());
+echo '</pre>';
 
-    if ($ve->verify()){
+echo '<pre>';
+print_r($ve->get_debug());
+echo '</pre>';
 
-        echo '<pre>';
-        print_r($ve->get_errors());
-        echo '</pre>';
-
-        echo '<pre>';
-        print_r($ve->get_debug());
-        echo '</pre>';
-
-
-        if(array_key_exists('EMAIL_FOUNDED', $ve->get_debug())){
-            if($ve->get_debug()['EMAIL_FOUNDED'] == true){
-                echo 1;
-            }
-        }else{
-            echo 0;
-        }
-
-    }else{
-
-        echo 'yahoo invalid address';
-
-    }
-
-}else{
-    $ve = new hbattat\VerifyEmail($email, $source_email, $port);
-    echo '<pre>';
-    print_r($ve->get_errors());
-    echo '</pre>';
-
-    echo '<pre>';
-    print_r($ve->get_debug());
-    echo '</pre>';
-
-}
+//
+//$email_arr = explode('@', $email);
+//if(in_array(strtolower($email_arr[1]),['yahoo.com'])) {
+//
+//    if ($ve->verify()){
+//
+//        echo '<pre>';
+//        print_r($ve->get_errors());
+//        echo '</pre>';
+//
+//        echo '<pre>';
+//        print_r($ve->get_debug());
+//        echo '</pre>';
+//
+//
+//        if(array_key_exists('EMAIL_FOUNDED', $ve->get_debug())){
+//            if($ve->get_debug()['EMAIL_FOUNDED'] == true){
+//                echo 1;
+//            }
+//        }else{
+//            echo 0;
+//        }
+//
+//    }else{
+//
+//        echo 'yahoo invalid address';
+//
+//    }
+//
+//}else{
+//    echo 'aqui';
+//    $ve = new hbattat\VerifyEmail($email, $source_email, $port);
+//    echo '<pre>';
+//    print_r($ve->get_errors());
+//    echo '</pre>';
+//
+//    echo '<pre>';
+//    print_r($ve->get_debug());
+//    echo '</pre>';
+//
+//}
 
 
 

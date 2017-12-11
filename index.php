@@ -13,9 +13,10 @@ $source_email   = $_GET['source-email'];
 $port           = $_GET['source-port'];
 
 $ve = new hbattat\VerifyEmail($email, $source_email, $port);
-echo '<pre>';
-var_dump($ve->verify());
-echo '</pre>';
+
+echo $ve->verify();
+
+
 echo '<pre>';
 print_r($ve->get_errors());
 echo '</pre>';

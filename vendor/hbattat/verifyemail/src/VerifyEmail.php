@@ -114,7 +114,7 @@
         if(!$this->mx) {
           $this->debug[] = 'No MX record was found.';
           $this->add_error('100', 'No suitable MX records found.');
-            print_r($this->debug)  ;
+//            print_r($this->debug)  ;
             return $is_valid;
         }
         else {
@@ -286,8 +286,10 @@
       $this->debug[] = 'Searching username error...';
       $json_response = json_decode($response, true);
       if(!$json_response['IfExistsResult']){
-        return true;
+          $this->debug['EMAIL_FOUNDED'] = true;
+          return true;
       }
+      $this->debug['EMAIL_FOUNDED'] = false;
       return false;
     }
 

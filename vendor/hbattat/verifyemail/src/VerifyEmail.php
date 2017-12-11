@@ -114,9 +114,8 @@
         if(!$this->mx) {
           $this->debug[] = 'No MX record was found.';
           $this->add_error('100', 'No suitable MX records found.');
-
+            print_r($this->debug)  ;
             return $is_valid;
-
         }
         else {
           $this->debug[] = 'Found MX: '.$this->mx;

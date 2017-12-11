@@ -14,9 +14,8 @@ $port           = $_GET['source-port'];
 
 $ve = new hbattat\VerifyEmail($email, $source_email, $port);
 
-
-$domain = $ve->return_domain($email);
-if(in_array(strtolower($domain),['yahoo.com'])) {
+$email_arr = explode('@', $email);
+if(in_array(strtolower($email_arr[1]),['yahoo.com'])) {
 
     if ($ve->verify()){
 
@@ -44,6 +43,7 @@ if(in_array(strtolower($domain),['yahoo.com'])) {
     }
 
 }else{
+    
 
     echo '<pre>';
     print_r($ve->get_errors());

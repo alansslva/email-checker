@@ -177,12 +177,6 @@
       return $is_valid;
     }
 
-      public function return_domain($email) {
-          $email_arr = explode('@', $email);
-          $domain = array_slice($email_arr, -1);
-          return $domain[0];
-      }
-
     private function get_domain($email) {
       $email_arr = explode('@', $email);
       $domain = array_slice($email_arr, -1);

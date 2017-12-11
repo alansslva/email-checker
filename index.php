@@ -44,16 +44,13 @@ if(in_array(strtolower($email_arr[1]),['yahoo.com'])) {
 
 }else{
 
-
             echo '<pre>';
             print_r($ve->get_errors());
             echo '</pre>';
 
             echo '<pre>';
-            print_r($ve->get_debug(false));
+            print_r($ve->get_debug());
             echo '</pre>';
-
-
 
 }
 

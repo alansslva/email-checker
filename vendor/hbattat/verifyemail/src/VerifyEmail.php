@@ -256,6 +256,7 @@
       $this->debug[] = 'Searching errors for exisiting username error...';
       foreach($response_errors as $err){
         if($err['name'] == 'yid' && $err['error'] == 'IDENTIFIER_EXISTS'){
+          $this->debug[] = $err;
           $this->debug[] = 'Email Founded';
           $this->debug['EMAIL_FOUNDED'] = true;
           return true;

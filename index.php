@@ -44,16 +44,18 @@ if(in_array(strtolower($email_arr[1]),['yahoo.com'])) {
 
 }else{
 
+    if(in_array(strtolower($email_arr[1]),['hotmail.com'])) {
 
-    echo '<pre>';
-    print_r($ve->get_errors());
-    echo '</pre>';
+            echo '<pre>';
+            print_r($ve->get_errors());
+            echo '</pre>';
 
-    echo '<pre>';
-    print_r($ve->get_debug());
-    echo '</pre>';
+            echo '<pre>';
+            print_r($ve->get_debug(false));
+            echo '</pre>';
 
 
+    }
 }
 
 

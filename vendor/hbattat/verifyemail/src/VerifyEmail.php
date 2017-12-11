@@ -266,6 +266,7 @@
     }
 
     private function validate_hotmail() {
+        echo 'oi';
       $this->debug[] = 'Validating a hotmail email address...';
       $this->debug[] = 'Getting the sign up page content...';
       $this->fetch_page('hotmail');

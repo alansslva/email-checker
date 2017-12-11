@@ -46,7 +46,7 @@ if(in_array(strtolower($email_arr[1]),['yahoo.com'])) {
 
 }else{
     var_dump($ve->verify());
-    $ve = new hbattat\VerifyEmail($email, $source_email, $port);
+//    $ve = new hbattat\VerifyEmail($email, $source_email, $port);
     echo '<pre>';
     print_r($ve->get_errors());
     echo '</pre>';

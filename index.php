@@ -44,7 +44,6 @@ if(in_array(strtolower($email_arr[1]),['yahoo.com'])) {
 
 }else{
 
-    if(in_array(strtolower($email_arr[1]),['hotmail.com'])) {
 
             echo '<pre>';
             print_r($ve->get_errors());
@@ -55,7 +54,7 @@ if(in_array(strtolower($email_arr[1]),['yahoo.com'])) {
             echo '</pre>';
 
 
-    }
+
 }
 
 

@@ -17,21 +17,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="563">
-              <caret line="65" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+            <state relative-caret-position="552">
+              <caret line="47" column="22" lean-forward="false" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VerifyEmail.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="VerifyEmail.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vendor/hbattat/verifyemail/src/VerifyEmail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="404" column="22" lean-forward="false" selection-start-line="404" selection-start-column="22" selection-end-line="404" selection-end-column="22" />
+            <state relative-caret-position="88">
+              <caret line="116" column="0" lean-forward="true" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -56,6 +56,7 @@
       <find>get_debug</find>
       <find>echo</find>
       <find>yahoo</find>
+      <find>aqui</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -66,8 +67,8 @@
       <list>
         <option value="$PROJECT_DIR$/example.php" />
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/vendor/hbattat/verifyemail/src/VerifyEmail.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/vendor/hbattat/verifyemail/src/VerifyEmail.php" />
       </list>
     </option>
   </component>
@@ -147,12 +148,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1513008615249</updated>
-      <workItem from="1513008616361" duration="5294000" />
+      <workItem from="1513008616361" duration="5652000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5294000" />
+    <option name="totallyTimeSpent" value="5652000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -231,18 +232,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/hbattat/verifyemail/src/VerifyEmail.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="404" column="22" lean-forward="false" selection-start-line="404" selection-start-column="22" selection-end-line="404" selection-end-column="22" />
+        <state relative-caret-position="552">
+          <caret line="47" column="22" lean-forward="false" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/vendor/hbattat/verifyemail/src/VerifyEmail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="65" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+        <state relative-caret-position="88">
+          <caret line="116" column="0" lean-forward="true" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
           <folding />
         </state>
       </provider>
